@@ -13,7 +13,7 @@ const ListItems = React.memo(({ post }) => {
 });
 
 const List = React.memo(({ posts, testFunc }) => {
-  console.log(testFunc);
+  console.log("List is Rendering");
   return (
     <ul>
       {posts.map((post) => (
