@@ -72,10 +72,7 @@ B Component: 0.1ms
 
 **3. useCallback을 이용한 함수 최적화**
 
-    ---
-
     useCallback은 메모이제이션된 함수를 반환하는 함수입니다.
-
     useCallback 적용은 useCallback안에 콜백함수와 의존성 배열을 순서대로 넣어주면 됩니다.
 
     ```jsx
