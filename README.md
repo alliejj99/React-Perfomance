@@ -13,3 +13,15 @@ B.js는 데이터를 분리하여 쪼개서 값을 출력하고 있습니다.
 - 얕은 비교 (Shallow Equal)
 - useCallback을 이용한 함수 최적화
 - useMemo를 이용한 결과 값 최적화
+
+---
+
+### 1. React Profiler로 성능측정하기
+
+첫 번째 "h"를 타이핑 해서 ReRendering을 했을 때 컴포넌트 마다 걸린 시간을
+React-Profiler 확장 프로그램을 통해 확인했습니다.
+App Component: 14.2ms
+A Component: 3.7ms
+B Component: 9.3ms
+
+-> 컴포넌트 내부의 기능들을 쪼개었을때가 훨씬 느리게 동작하고 있습니다.
